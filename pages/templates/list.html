@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>List</title>
+    </head>
+    <body>
+        {% for Page in pages %}
+            <a href="#"></a>
+                <ul>
+                    <li><a href="{% url 'Page-detail' page_id=Page.id%}"> {{Page.title}}</a></li>
+                </ul>
+            </a>
+        {% endfor %}
+    </body>
+</html>
