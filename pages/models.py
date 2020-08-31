@@ -11,4 +11,4 @@ class Page(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("Page-detail", kwargs={"page_id": self.id})
+        return reverse("page-detail", kwargs={"page_id": self.id})

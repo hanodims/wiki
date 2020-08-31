@@ -8,7 +8,7 @@
         {% for Page in pages %}
             <a href="#"></a>
                 <ul>
-                    <li><a href="{% url 'Page-detail' page_id=Page.id%}"> {{Page.title}}</a></li>
+                    <li><a href="{{Page.get_absolute_url}}"> {{Page.title}}  {{Page.content}}</a></li>
                 </ul>
             </a>
         {% endfor %}
